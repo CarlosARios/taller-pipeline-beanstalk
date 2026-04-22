@@ -1,8 +1,9 @@
+import os
 import funtions as f
 from flask import Flask, jsonify
 
 application = Flask(__name__)
-data = f.load_file('./heroes.csv')
+data = f.load_file(os.path.join(os.path.dirname(__file__), 'heroes.csv'))
 
 @application.route("/")
 def index():
