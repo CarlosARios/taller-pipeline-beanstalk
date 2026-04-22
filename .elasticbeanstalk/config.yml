@@ -1,9 +1,9 @@
 branch-defaults:
   main:
-    environment: Appbeanstalk2021-env
+    environment: Pipeline-beanstalk-app-env-env
     group_suffix: null
 global:
-  application_name: App_beanstalk_2021
+  application_name: Pipeline-beanstalk-app-env
   branch: null
   default_ec2_keyname: aws-eb
   default_platform: Python 3.8
